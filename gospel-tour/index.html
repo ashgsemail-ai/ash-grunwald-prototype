@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ash Grunwald — National Tour with Full Gospel Choir 2026</title>
+  <meta name="description" content="Ash Grunwald National Tour with Full Gospel Choir — Melbourne, Brisbane, Adelaide, Sydney. October 2026. With special guest Emily Lubitz." />
+  <meta property="og:title" content="Ash Grunwald — National Tour with Full Gospel Choir 2026" />
+  <meta property="og:description" content="Australia's king of blues and roots is hitting the stage with a full gospel choir. Melbourne. Brisbane. Adelaide. Sydney." />
+  <meta property="og:type" content="website" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --gold: #e8a020;
+      --white: #ffffff;
+      --black: #0a0a0a;
+      --dark: #111111;
+      --mid: #1a1a1a;
+      --text-muted: #aaaaaa;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Georgia', 'Times New Roman', serif;
+      background: var(--black);
+      color: var(--white);
+      line-height: 1.6;
+    }
+
+    /* NAV */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      background: rgba(0,0,0,0.85);
+      backdrop-filter: blur(8px);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.75rem 2rem;
+    }
+    nav .logo {
+      font-family: 'Arial Black', sans-serif;
+      font-size: 1.1rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--white);
+      text-decoration: none;
+    }
+    nav .logo span { color: var(--gold); }
+    nav a.nav-cta {
+      background: var(--gold);
+      color: var(--black);
+      font-family: 'Arial Black', sans-serif;
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 0.5rem 1.25rem;
+      border-radius: 2px;
+      font-weight: 900;
+    }
+
+    /* HERO */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      overflow: hidden;
+      padding: 6rem 1.5rem 4rem;
+    }
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(160deg, #1a0a2e 0%, #0d0d0d 40%, #1a0800 100%);
+    }
+    .hero-bg::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 50% 40%, rgba(232,160,32,0.12) 0%, transparent 65%);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 780px;
+    }
+    .hero-eyebrow {
+      font-family: 'Arial', sans-serif;
+      font-size: 0.8rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1.5rem;
+    }
+    .hero h1 {
+      font-family: 'Arial Black', 'Impact', sans-serif;
+      font-size: clamp(2.4rem, 7vw, 5rem);
+      line-height: 1.05;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+      margin-bottom: 0.5rem;
+    }
+    .hero h2 {
+      font-family: 'Arial Black', sans-serif;
+      font-size: clamp(1rem, 3vw, 1.6rem);
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--gold);
+      margin-bottom: 1.5rem;
+    }
+    .hero-cities {
+      font-family: 'Arial', sans-serif;
+      font-size: clamp(0.9rem, 2vw, 1.1rem);
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 0.5rem;
+    }
+    .hero-guest {
+      font-style: italic;
+      color: var(--text-muted);
+      font-size: 1rem;
+      margin-bottom: 2.5rem;
+    }
+    .hero-tagline {
+      font-size: clamp(1rem, 2.5vw, 1.25rem);
+      color: rgba(255,255,255,0.85);
+      max-width: 600px;
+      margin: 0 auto 1.5rem;
+    }
+    .hero-quote {
+      font-style: italic;
+      font-size: clamp(1.05rem, 2.5vw, 1.35rem);
+      color: var(--gold);
+      margin-bottom: 2.5rem;
+      line-height: 1.5;
+    }
+    .btn-primary {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--black);
+      font-family: 'Arial Black', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 900;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 1rem 2.5rem;
+      border-radius: 2px;
+      transition: background 0.2s, transform 0.15s;
+    }
+    .btn-primary:hover { background: #f5b030; transform: translateY(-2px); }
+
+    /* SECTION SHARED */
+    section { padding: 5rem 1.5rem; }
+    .container { max-width: 860px; margin: 0 auto; }
+    .section-title {
+      font-family: 'Arial Black', sans-serif;
+      font-size: clamp(1.4rem, 4vw, 2.2rem);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    .section-title span { color: var(--gold); }
+
+    /* DESCRIPTION */
+    .description {
+      background: var(--dark);
+    }
+    .description p {
+      font-size: clamp(1rem, 2vw, 1.15rem);
+      color: rgba(255,255,255,0.85);
+      text-align: center;
+      max-width: 680px;
+      margin: 0 auto 1.25rem;
+    }
+    .description p.highlight {
+      font-style: italic;
+      color: var(--gold);
+      font-size: clamp(1.05rem, 2.5vw, 1.3rem);
+    }
+
+    /* SHOWS */
+    .shows { background: var(--black); }
+    .shows-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+    .show-card {
+      background: var(--mid);
+      border: 1px solid rgba(232,160,32,0.2);
+      border-radius: 4px;
+      padding: 2rem 1.5rem;
+      text-align: center;
+      transition: border-color 0.2s, transform 0.15s;
+    }
+    .show-card:hover { border-color: var(--gold); transform: translateY(-3px); }
+    .show-venue {
+      font-family: 'Arial Black', sans-serif;
+      font-size: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--gold);
+      margin-bottom: 0.25rem;
+    }
+    .show-city {
+      font-size: 0.8rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 1rem;
+    }
+    .show-date {
+      font-family: 'Arial', sans-serif;
+      font-size: 1rem;
+      color: var(--white);
+      margin-bottom: 0.4rem;
+    }
+    .show-choir {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      font-style: italic;
+      margin-bottom: 1.5rem;
+      line-height: 1.4;
+    }
+    .btn-book {
+      display: inline-block;
+      background: transparent;
+      color: var(--gold);
+      border: 2px solid var(--gold);
+      font-family: 'Arial Black', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 900;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 0.6rem 1.5rem;
+      border-radius: 2px;
+      transition: background 0.2s, color 0.2s;
+    }
+    .btn-book:hover { background: var(--gold); color: var(--black); }
+
+    /* QUOTES */
+    .quotes { background: var(--dark); }
+    .quotes-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 2rem;
+    }
+    .quote-card {
+      border-left: 3px solid var(--gold);
+      padding: 1rem 1.5rem;
+    }
+    .quote-text {
+      font-style: italic;
+      font-size: 0.95rem;
+      color: rgba(255,255,255,0.85);
+      margin-bottom: 0.75rem;
+      line-height: 1.6;
+    }
+    .quote-source {
+      font-family: 'Arial', sans-serif;
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+
+    /* CTA */
+    .cta-section {
+      background: linear-gradient(135deg, #1a0a2e 0%, #0d0d0d 100%);
+      text-align: center;
+    }
+    .cta-section h2 {
+      font-family: 'Arial Black', sans-serif;
+      font-size: clamp(1.5rem, 4vw, 2.5rem);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 1rem;
+    }
+    .cta-section p {
+      color: var(--text-muted);
+      margin-bottom: 2rem;
+      font-size: 1rem;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #050505;
+      text-align: center;
+      padding: 2rem 1.5rem;
+      font-family: 'Arial', sans-serif;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      letter-spacing: 0.05em;
+    }
+    footer a { color: var(--gold); text-decoration: none; }
+
+    /* DIVIDER */
+    .divider {
+      width: 60px;
+      height: 3px;
+      background: var(--gold);
+      margin: 0 auto 2.5rem;
+    }
+
+    @media (max-width: 600px) {
+      nav { padding: 0.75rem 1rem; }
+      .shows-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="https://www.ashgrunwald.com" class="logo">Ash <span>Grunwald</span></a>
+    <a href="#shows" class="nav-cta">Book Now</a>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">National Tour 2026</p>
+      <h1>Ash Grunwald</h1>
+      <h2>with Full Gospel Choir</h2>
+      <p class="hero-cities">Melbourne &nbsp;·&nbsp; Brisbane &nbsp;·&nbsp; Adelaide &nbsp;·&nbsp; Sydney</p>
+      <p class="hero-guest">with special guest Emily Lubitz</p>
+      <p class="hero-tagline">
+        Australia's king of blues and roots is hitting the stage with a full gospel choir.
+      </p>
+      <p class="hero-quote">
+        "It's a musical experience that'll stir your bones<br>and crack open your heart."
+      </p>
+      <a href="#shows" class="btn-primary">Get Tickets</a>
+    </div>
+  </section>
+
+  <!-- DESCRIPTION -->
+  <section class="description">
+    <div class="container">
+      <div class="divider"></div>
+      <p>
+        Witness the raw power of Ash's soaring vocals and driving blues guitar as they meet the rich harmonies of a hand-picked gospel choir for a one-of-a-kind performance that will leave you breathless.
+      </p>
+      <p>
+        Expect Ash's most iconic songs reimagined with the thunderous energy of gospel, alongside powerful renditions of traditional spirituals that will have the whole theatre roaring, clapping, and rising to their feet.
+      </p>
+      <p class="highlight">It's Ash Grunwald like you've never seen him before.</p>
+    </div>
+  </section>
+
+  <!-- SHOWS -->
+  <section class="shows" id="shows">
+    <div class="container">
+      <h2 class="section-title">Show <span>Dates</span></h2>
+      <div class="shows-grid">
+
+        <div class="show-card">
+          <p class="show-venue">Melbourne Recital Centre</p>
+          <p class="show-city">Melbourne, VIC</p>
+          <p class="show-date">Friday, October 2</p>
+          <p class="show-choir">Ash Grunwald with Melbourne Soul &amp; Gospel Choir</p>
+          <a href="https://www.melbournerecital.com.au/whats-on/current-productions/ash-grunwald" target="_blank" rel="noopener" class="btn-book">Book Now</a>
+        </div>
+
+        <div class="show-card">
+          <p class="show-venue">The Princess Theatre</p>
+          <p class="show-city">Brisbane, QLD</p>
+          <p class="show-date">Sunday, October 18</p>
+          <p class="show-choir">Ash Grunwald with Brisbane City Gospel Choir</p>
+          <a href="https://www.ticketmaster.com.au/event/25006437C261C109" target="_blank" rel="noopener" class="btn-book">Book Now</a>
+        </div>
+
+        <div class="show-card">
+          <p class="show-venue">Woodville Town Hall</p>
+          <p class="show-city">Adelaide, SA</p>
+          <p class="show-date">Friday, October 23</p>
+          <p class="show-choir">Ash Grunwald with Full Gospel Choir (Quoir)<br><em>directed by Libby O'Donovan OAM</em></p>
+          <a href="https://events.humanitix.com/ash-grunwald-with-full-gospel-choir-at-woodville-town-hall" target="_blank" rel="noopener" class="btn-book">Book Now</a>
+        </div>
+
+        <div class="show-card">
+          <p class="show-venue">The Concourse Theatre</p>
+          <p class="show-city">Sydney, NSW</p>
+          <p class="show-date">Friday, October 30</p>
+          <p class="show-choir">Ash Grunwald with Inner West Voices Gospel Choir</p>
+          <a href="https://aucentury.sales.ticketsearch.com/sales/salesevent?ev=159821&promocode=ARTISTPRE" target="_blank" rel="noopener" class="btn-book">Book Now</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- QUOTES -->
+  <section class="quotes">
+    <div class="container">
+      <h2 class="section-title">What People Are <span>Saying</span></h2>
+      <div class="quotes-grid">
+        <div class="quote-card">
+          <p class="quote-text">"Crowd-frenzied shows with a signature sound that captures the soul of blues and the heartbeat of modern music."</p>
+          <p class="quote-source">The Sydney Morning Herald</p>
+        </div>
+        <div class="quote-card">
+          <p class="quote-text">"Grunwald is a showman who rises to another level when performing live."</p>
+          <p class="quote-source">The Music</p>
+        </div>
+        <div class="quote-card">
+          <p class="quote-text">"Whoever said men can only do one thing at a time have never seen Ash Grunwald play."</p>
+          <p class="quote-source">The Rock Pit</p>
+        </div>
+        <div class="quote-card">
+          <p class="quote-text">"Named one of the most important voices in Australian blues."</p>
+          <p class="quote-source">Rhythms Magazine</p>
+        </div>
+        <div class="quote-card">
+          <p class="quote-text">"A blues modernist pushing the genre's boundaries."</p>
+          <p class="quote-source">Rolling Stone Australia</p>
+        </div>
+        <div class="quote-card">
+          <p class="quote-text">"Grunwald's performance was more than just a gig; it was an experience — a testament to his prowess as a live musician."</p>
+          <p class="quote-source">Bugle Ap Geringong</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>Don't Miss This</h2>
+      <p>Limited seats. Four nights only. October 2026.</p>
+      <a href="#shows" class="btn-primary">Get Tickets Now</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2026 Ash Grunwald. All rights reserved. &nbsp;|&nbsp; <a href="https://www.ashgrunwald.com">ashgrunwald.com</a></p>
+  </footer>
+
+</body>
+</html>
